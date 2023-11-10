@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home</title>
+        <!--^ Change "Home" to "gCal Schedule Importer" when done.-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--script src="index.js"--><!--/script-->
+        <h1>UCSC Google Calendar Class Schedule Importer</h1>
+        <p>Upload a screenshot of your class schedule from <a href="https://login.ucsc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1" target="_blank">my.ucsc.edu</a> here:</p>
+        <form method = 'POST' enctype='multipart/form-data'>
+            {{form.hidden_tag()}}
+            {{form.file()}}
+            {{form.submit()}}
+        </form>
+    </body>
+</html>
